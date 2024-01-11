@@ -11,6 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity(name = "cliente")
+
 public class Cliente extends Persona {
     @Column(name = "clave")
     @NotEmpty(message = "Clave es requerida")

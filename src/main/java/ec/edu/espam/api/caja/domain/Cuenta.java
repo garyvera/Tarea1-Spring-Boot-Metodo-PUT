@@ -7,11 +7,11 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.util.List;
-
 @Getter
 @Setter
 @Entity(name = "cuenta")
 public class Cuenta {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
@@ -37,7 +37,6 @@ public class Cuenta {
     @Column(name = "estado")
     @NotNull(message = "Estado es requerido")
     private Boolean estado;
-
     private enum TipoCuenta {
         AHORRO, CORRIENTE
     }
